@@ -1,0 +1,13 @@
+{
+  "name": "SchnitzBot",
+  "version": "0.1.0",
+  "description": "A bot for managing Polls, Calendar and other stuff for your mates.",
+  "license": "MIT",
+  "author": {
+    "email": "marius.landwehr@gmail.com",
+    "name": "Marius Landwehr"
+  },
+  "dependencies": {
+    "telegraf": "^3.7.1"
+  }
+}
