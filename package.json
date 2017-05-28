@@ -8,6 +8,7 @@
     "name": "Marius Landwehr"
   },
   "dependencies": {
+    "dotenv": "^4.0.0",
     "telegraf": "^3.7.1"
   }
 }

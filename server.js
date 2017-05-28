@@ -1,8 +1,10 @@
+require('dotenv').config()
 const Telegraf = require('telegraf')
-const bot = new Telegraf(process.env.TELEGRAF_BOT_TOKEN)
+const Appointment = require('./app/Models/Appointment')
+
+let bot = new Telegraf(process.env.TELEGRAF_BOT_TOKEN)
 
 let dates = [
-    new Appointment("Grillen bei Daniel", "Heute um 18:00"),
     new Appointment("Daniels Geburtstag", "03.06.2017 20:00")
 ]
 
