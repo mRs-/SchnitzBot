@@ -1,14 +1,28 @@
 {
-  "name": "SchnitzBot",
-  "version": "0.1.0",
-  "description": "A bot for managing Polls, Calendar and other stuff for your mates.",
-  "license": "MIT",
-  "author": {
-    "email": "marius.landwehr@gmail.com",
-    "name": "Marius Landwehr"
+  "name": "Schnitzbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index",
+  "types": "lib/index",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
   },
-  "dependencies": {
-    "dotenv": "^4.0.0",
-    "telegraf": "^3.7.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mRs-/SchnitzBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mRs-/SchnitzBot/issues"
+  },
+  "homepage": "https://github.com/mRs-/SchnitzBot#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.29",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.0.6",
+    "typescript": "^2.3.4"
   }
 }
