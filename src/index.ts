@@ -1,11 +1,11 @@
 import { CommandRegistry } from "./CommandRegistry/CommandRegistry"
-import { StartCommand } from "./commands/StartCommand"
-import { DateCommand } from "./commands/DateCommand"
+import { CommandBuilder } from "./commands/CommandBuilder"
 
 var registry = new CommandRegistry()
 
-registry.register(new StartCommand())
-registry.register(new DateCommand())
+new CommandBuilder().build().forEach( command => {
+    registry.register(command)
+})
 
 registry.commands.forEach(element => {
     element.run(["Test"])
